@@ -1,12 +1,6 @@
-import "package:dio/dio.dart";
 import "package:flutter/material.dart";
 
-import "../utils/data.dart";
-import "login_screen.dart";
-
 class SplashScreen extends StatelessWidget {
-  static String get routeName => 'splash';
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../controller/login_controller.dart';
 import 'next_screen.dart';
 
+// ignore: must_be_immutable
 class LoginScreen extends StatelessWidget {
   LoginScreen({Key? key}) : super(key: key);
 
@@ -13,9 +14,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dio = Dio();
-    String path = 'auth/login';
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('login Screen'),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_loginflow_getx/controller/login_controller.dart';
+import 'package:flutter_loginflow_getx/view/splash_screen.dart';
 import 'package:get/get.dart';
 
 import 'view/login_screen.dart';
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter login',
-      home: LoginScreen(),
+      home: SplashScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
